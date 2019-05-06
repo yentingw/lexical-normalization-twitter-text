@@ -1,4 +1,4 @@
-# Project 1: very tweetz. such non-canonickal. amayze
+# Project: Twitter Text String Matching
 
 > Aim
 
