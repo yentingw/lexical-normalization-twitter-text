@@ -1,11 +1,11 @@
 # Project: Twitter Text String Matching
 
-> Aim
+## Aim
 
 For each misspelled token in misspell.txt, filter out its best match(es) in dict.txt,
 and then compare the best match(es) to the canonical form in correct.txt.
 
-> Methods
+## Methods
 
 Step 1: Convert all words in dict.txt with soundex(), which I acquired from:
 https://medium.com/@yash_agarwal2/soundex-and-levenshtein-distance-in-python-8b4b56542e9e
@@ -20,20 +20,17 @@ The Leveshitein module is acquired from https://pypi.org/project/python-Levensht
 
 Step 4: Compare the best match to the canonical form, and calculate the accuracy. Please refer from line 30 in main.py.
 
-> Result
+## Result
 
 For each best match, it is either a hit (gain 1 point) or not when comparing to the canonical form.
 Divide the total points by the number of tokens to generate accuracy.
 
 The accuracy of my model is 76%.
 
-> Acknowledgements
+## Acknowledgements
 
 Datasets are originated from:
 Baldwin, Timothy, Marie Catherine de Marneffe, Bo Han, Young-Bum Kim, Alan Ritter,
 and Wei Xu (2015) Shared Tasks of the 2015 Workshop on Noisy User-generated Text:
 Twitter Lexical Normalization and Named Entity Recognition. In Proceedings of the ACL
 2015 Workshop on Noisy User-generated Text, Beijing, China, pp. 126–135.
-
-Soundex function is acquired from:
-https://medium.com/@yash_agarwal2/soundex-and-levenshtein-distance-in-python-8b4b56542e9e
